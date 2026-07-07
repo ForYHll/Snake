@@ -4,7 +4,7 @@ A polished browser version of the classic Snake game built with HTML, CSS, and J
 
 ## Run
 
-This project has no external dependencies. Start any static file server in this folder:
+This project is a single-file HTML game with no external dependencies. Start any static file server in this folder:
 
 ```bash
 python -m http.server 5188
@@ -24,11 +24,16 @@ http://127.0.0.1:5188
 - Restart: Enter on game over or Restart button
 - Touch: Use the on-screen direction buttons or swipe on the board
 
+## Files
+
+- `index.html`: Complete game UI, styles, and JavaScript logic.
+
 ## Features
 
 - Canvas-rendered game board
 - Score, best score, level, and speed display
 - Smooth difficulty scaling as score increases
+- Bonus gold food every fifth food for extra points
 - Keyboard, button, and swipe controls
 - Pause, continue, game over, and restart states
 - Local high score storage
