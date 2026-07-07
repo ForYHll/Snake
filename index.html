@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake / 贪吃蛇</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="game-panel" aria-labelledby="game-title">
+        <div class="hero-row">
+          <div>
+            <p class="eyebrow">Arcade Classic</p>
+            <h1 id="game-title">Snake <span>贪吃蛇</span></h1>
+          </div>
+          <div class="status-pill" id="statusLabel">Ready</div>
+        </div>
+
+        <div class="stats-grid" aria-label="Game statistics">
+          <div class="stat">
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div class="stat">
+            <span>Best</span>
+            <strong id="bestScore">0</strong>
+          </div>
+          <div class="stat">
+            <span>Level</span>
+            <strong id="level">1</strong>
+          </div>
+          <div class="stat">
+            <span>Speed</span>
+            <strong id="speed">7</strong>
+          </div>
+        </div>
+
+        <div class="board-wrap">
+          <canvas id="gameCanvas" width="640" height="640" aria-label="Snake game board"></canvas>
+          <div class="overlay" id="overlay">
+            <h2 id="overlayTitle">Ready to Play</h2>
+            <p id="overlayText">Press Enter or tap Start to begin.</p>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="startButton" type="button">Start</button>
+          <button id="pauseButton" type="button">Pause</button>
+          <button id="restartButton" type="button">Restart</button>
+        </div>
+      </section>
+
+      <aside class="controls-panel" aria-label="Controls">
+        <h2>Controls</h2>
+        <div class="control-list">
+          <p><strong>Move</strong> Arrow keys or WASD</p>
+          <p><strong>Pause</strong> Space</p>
+          <p><strong>Start</strong> Enter</p>
+        </div>
+
+        <div class="touch-pad" aria-label="Touch controls">
+          <button class="touch-btn up" type="button" data-direction="up" aria-label="Move up">↑</button>
+          <button class="touch-btn left" type="button" data-direction="left" aria-label="Move left">←</button>
+          <button class="touch-btn right" type="button" data-direction="right" aria-label="Move right">→</button>
+          <button class="touch-btn down" type="button" data-direction="down" aria-label="Move down">↓</button>
+        </div>
+      </aside>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
