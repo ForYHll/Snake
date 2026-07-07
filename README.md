@@ -2,6 +2,20 @@
 
 一个使用单个 HTML 文件实现的浏览器版贪吃蛇游戏。项目无需安装依赖，打开 `index.html` 或启动本地静态服务即可游玩。
 
+## 效果预览
+
+### 准备开始
+
+![准备开始界面](docs/images/snake-ready.png)
+
+### 游戏进行中
+
+![游戏进行中界面](docs/images/snake-playing.png)
+
+### 游戏结束
+
+![游戏结束界面](docs/images/snake-game-over.png)
+
 ## 运行方式
 
 推荐在项目目录启动本地静态服务：
